@@ -1,0 +1,42 @@
+.starlist{
+    list-style: none;/* não conta a lista */
+    padding: 0; /* margem interna */
+}
+
+.character{
+    background-color: gray;
+    padding: 2rem;/* 2rem(espaçamento em 32 pixel) */
+    border-radius: 1rem;/* border = borda 1rem(16pixel) */
+}
+
+.character .name{
+    font-family: 'LBC Starlight', sans-serif; /* tipo de fonte */
+    font-size: 32px;/* tamanho */
+     
+}
+
+.character .detail{
+    display: flex;/* direcionamento dos detalhes */
+}
+.character .description{
+    border:  black 1px solid;
+    padding: 2rem;
+    width: 70%;
+
+}
+.character img{ /* não é uma classe, é uma tag, então não tem "." */
+    width: 30%;
+}
+
+@media screen and (max-width:500px) {
+    .character .detail{
+        flex-direction: column-reverse;
+    }
+    .character img{
+        width:  100%;
+    }
+    .character .name{
+        text-align:  center;
+    }
+    
+}
